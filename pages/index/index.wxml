@@ -1,0 +1,22 @@
+<view class="center title">数字华容道</view>
+
+<view bindtap="goGame" class="center button">开始游戏</view>
+
+<view bindtap="difficulty" class="center button">
+  难度 {{difficulty}} x {{difficulty}}
+</view>
+
+<view bindtap="top" class="center button">Top榜</view>
+
+
+<view>
+  <button class="share" style="width:100rpx; height:100rpx" open-type="share">
+    <image src="/images/share.png"></image>
+  </button>
+  <block>
+    <image wx:if="{{isAudioPlay}}" src="/images/audioOn.png" class="audioImg"  catchtouchstart="turnAudio"></image>
+  <image wx:else src="/images/audioOff.png" class="audioImg"  catchtouchstart="turnAudio"></image>
+  </block>
+  
+</view>
+

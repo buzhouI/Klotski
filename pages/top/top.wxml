@@ -1,0 +1,19 @@
+<!--pages/top/top.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">难度</view>
+    <view class="th">最短时间</view>
+  </view>
+  <block wx:for="{{top}}">
+    <view class="tr bg-g" wx:if="{{index % 2 != 0}}">
+      <view class="td">{{item.difficulty}} x {{item.difficulty}}</view>
+      <view wx:if="{{item.m<60 && item.s<60}}" class="td">{{item.m}} : {{item.s}}</view>
+      <view wx:else class="td"></view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.difficulty}} x {{item.difficulty}}</view>
+      <view wx:if="{{item.m<60 && item.s<60}}" class="td">{{item.m}} : {{item.s}}</view>
+      <view wx:else class="td"></view>
+    </view>
+  </block>
+</view>

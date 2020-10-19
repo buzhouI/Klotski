@@ -1,0 +1,15 @@
+/**app.wxss**/
+
+page {
+  background: #fff;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

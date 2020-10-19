@@ -1,0 +1,18 @@
+<view class="container" style="width:calc({{windowWidth}}px - 150rpx + {{(difficulty-1)*2}}rpx);height:calc({{windowWidth}}px - 150rpx + {{(difficulty-1)*2}}rpx);">
+
+    <block wx:for='{{numData}}' wx:key='{{index}}'>
+        <image wx:if="{{!item.isEmpty}}" style="width:calc(({{windowWidth}}px - 165rpx) / {{difficulty}});height:calc(({{windowWidth}}px - 165rpx) / {{difficulty}})" catchtouchstart="move" data-index='{{index}}' class="grid" src="../../images/marble.png">
+            <view class="center" style="font-size: {{windowWidth/difficulty}}rpx; color: #888888">{{item.num}}</view>
+        </image>
+
+        <view wx:if='{{item.isEmpty}}' style="width:calc(({{windowWidth}}px - 165rpx) / {{difficulty}});height:calc(({{windowWidth}}px - 165rpx) / {{difficulty}})" class="empty"></view>
+    </block>
+
+</view>
+
+
+<view class="text">步数：{{step}}</view>
+<view class="text">耗时：{{m}} : {{s}}</view>
+
+<view bindtap="gameStart" class="center button">开始</view>
+<view bindtap="reset" class="center button">重置</view>

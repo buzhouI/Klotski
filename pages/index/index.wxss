@@ -1,0 +1,40 @@
+page {
+  align-items: center;
+}
+.title{
+  font-size: 100rpx;
+  color: #555555;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+}
+
+.button {
+  width: 400rpx;
+  height: 80rpx;
+  background: #f5f2f2;
+  color: #555555;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  margin-top: 60rpx;
+}
+
+.audioImg{
+  width: 40px;
+  height: 40px;
+  margin-top: 100rpx;
+  margin-left: 100rpx;
+}
+
+.share{
+  float: left;
+  background: transparent;
+  color: #555555;
+  margin-top: 90rpx;
+  padding: 0;
+  border: none;
+}
+.share image{
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+}
